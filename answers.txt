@@ -1,0 +1,23 @@
+What is responsible for defining the routes of the games resource?
+Server router.
+
+What do you notice about the folder structure? Whats the client responsible for? Whats the server responsible for?
+Client interphases with the user, taking the input and translating the data into JSON and adding the routes. Server is responsible for communicating with the databases, reading the routes on the object and following the orders.
+
+What are the the responsibilities of server.js?
+Gets access to the port, tools and database, and also the routes template.
+
+What are the responsibilities of the gamesRouter?
+gameRouter stores all different routes for all the games.
+
+What process does the the client (front-end) use to communicate with the server?
+Form submission
+
+What optional second argument does the fetch method take? And what is it used for in this application? Hint: See Using Fetch on the MDN docs
+RequestInit - takes an object which sets it up to be added to the database, inlcuding giving its route and converting the info to string.
+
+Which of the games API routes does the front-end application consume (i.e. make requests to)?
+Create POST
+
+What are we using the MongoDB Driver for?
+It allows for non-relative objects to be stored in documents and fields, rather than rows and collumns
